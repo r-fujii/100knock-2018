@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <style type="text/css">
+    <!--
+    body {
+        background-color: #cccccc;
+    }
+    -->
+    </style>
+    </head>
+    <body>
+        {% if n_entry %}
+            <center>
+            {{ msg }}
+            </center>
+            <hr>
+            {% block content%}
+            {% endblock %}
+        {% else %}
+            <center>
+            {{ msg }}
+            </center>
+        {% endif %}
+    </body>
+</html>
